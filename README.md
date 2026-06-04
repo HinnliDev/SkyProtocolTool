@@ -4,7 +4,7 @@
 [![Русский](https://img.shields.io/badge/lang-Русский-blue)](./README_ru.md)
 [![License MIT](https://badgen.net/github/license/HinnliDev/SkyProtocolTool)](https://github.com/HinnliDev/SkyProtocolTool/blob/main/LICENSE)
 
-Sky Protocol Tool (SPT) is a plugin for the Android version of Sky: Children of the Light, loaded via Canvas. It provides a convenient interface for analyzing in-game HTTP traffic and working with requests.
+Sky Protocol Tool (SPT) is a mod for the Android version of Sky: Children of the Light, loaded via Canvas. It provides a convenient interface for analyzing in-game HTTP traffic and working with requests.
 </div>
 
 ---
