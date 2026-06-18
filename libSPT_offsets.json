@@ -1,11 +1,12 @@
 {
   "version": "1.4.5",
   "contributors": [
-    "Hinnli", "Sexiled"
+    "Hinnli",
+    "Sexiled"
   ],
   "comments": [
     "Line 1",
     "Line 2",
     "Line 3"
-  ],
+  ]
 }
