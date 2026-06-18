@@ -1,9 +1,10 @@
 {
   "version": "0.0.0",
   "gameVersion": "0.0.0",
-  "contributors": [
-    "Hinnli\nSexiled"
+  "contributors": "Hinnli\nSexiled",
+  "comments": [
+    "Test 0123456789 0123456789 023456789\n123",
+    "Test\n321"
   ],
-  "comments": "Test 0123456789 0123456789 023456789\n123",
   "offsets": {}
 }
