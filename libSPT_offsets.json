@@ -62,7 +62,19 @@
       "BootloaderGameCurrentLevelNamePointer": "0x940",
       "BootloaderLuaDoString": "0x283F0E8",
       "BootloaderCameraTermsUniformSetup": "0x1389F9C",
-      "BootloaderFloatUniformBinder": "0x281B7C0"
+      "BootloaderFloatUniformBinder": "0x281B7C0",
+      "BootloaderAvatarSitCycle": "0x1D8925C",
+      "BootloaderLocalAvatarActionResolve": "0x1119110",
+      "BootloaderAvatarEnterSit": "0x11E2BCC",
+      "BootloaderAvatarEnterSquat": "0x11E2D9C",
+      "BootloaderAvatarEnterSleep": "0x11EC838",
+      "BootloaderAvatarLeavePose": "0x11EDE54",
+      "BootloaderAvatarStopAnimation": "0x11ED2A0",
+      "BootloaderAvatarSetState": "0x11E2E68",
+      "BootloaderAvatarEmotePlay": "0x1D8829C",
+      "BootloaderCollectibleLookup": "0x141F370",
+      "BootloaderCollectibleLookupByName": "0x141F700",
+      "BootloaderAvatarTakeCandle": "0x179E488"
     },
     "Signatures": {
         "BootloaderLocalAvatarLocoUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 43 2F D1 F8 03 00 AA A8 03 02 D1 F4 03 07 AA 00 0F C5 3C",
@@ -70,7 +82,10 @@
       "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1 08 40 20 1E 00 E4 00 6F F3 03 08 AA A8 E3 00 D1 FC 03 00 AA E0 03 02 AA",
         "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E 68 8A 00 B0 F5 03 03 AA 08 81 55 39 F3 03 01 AA F4 03 00 AA 28 02 00 34",
       "BootloaderCameraTermsUniformSetup": "FF C3 04 D1 E8 73 00 FD FD 7B 0F A9 FC 5F 10 A9 F6 57 11 A9 F4 4F 12 A9 FD C3 03 91 00 E4 00 6F A8 63 00 D1 F3 03 00 AA A8 83 1F F8 A8 23 00 D1 F4 03 02 AA F5 03 01 AA A8 83 1E F8 00 80 00 AD",
-      "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A"
+      "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A",
+      "BootloaderAvatarSitCycle": "FF 43 02 D1 FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 F3 03 00 AA A8 43 00 D1 20 88 41 F9 F5 03 01 AA A8 83 1F F8",
+      "BootloaderAvatarEmotePlay": "E8 0F 1A FC FD FB 00 A9 FC 0F 00 F9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 23 00 91 FF C3 26 D1",
+      "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9 5F 00 00 72 48 00 80 52"
     }
   }
 }
