@@ -1,15 +1,15 @@
 {
-  "game_version": "0.34.1",
+  "game_version": "0.34.2",
   "version": "1.5.1",
   "contributors": [
     "Hinnli"
   ],
   "Network": {
     "Offsets": {
-      "BootloaderHttpRequestEnqueue": "0x2825940",
-      "BootloaderHttpResponseParse": "0x282A6E4",
-      "BootloaderWebSocketSendFrame": "0x28FF1C4",
-      "BootloaderWebSocketDispatchData": "0x28FEE84"
+      "BootloaderHttpRequestEnqueue": "0x28289B0",
+      "BootloaderHttpResponseParse": "0x282D754",
+      "BootloaderWebSocketSendFrame": "0x29022A4",
+      "BootloaderWebSocketDispatchData": "0x2901F64"
     },
     "Signatures": {
       "BootloaderHttpRequestEnqueue": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 C3 25 D1 3F E9 7B 92 29 00 40 B9 08 8D 8E 52 2A 10 40 39 88 0E AE 72",
@@ -23,26 +23,26 @@
   },
   "Accounts": {
     "Offsets": {
-      "BootloaderAccountSelectUpdate": "0xD84FB8",
-      "BootloaderSystemAccountApply": "0xD842EC"
+      "BootloaderAccountSelectUpdate": "0xD85F6C",
+      "BootloaderSystemAccountApply": "0xD84BE8"
     },
     "Signatures": {
         "BootloaderAccountSelectUpdate": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 41 27 D1 3F E9 7B 92 E8 0B 40 91 FA 03 06 AA F8 03 05 AA 08 C1 26 91 F4 03 04 AA FB 03 03 AA E8 DF 14 F9 E8 0B 40 91 F5 03 02 AA",
-        "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 3C 54 B9 FF 7B 05 B9 EA 1A 03 94 A8 43 00 D1 A9 23 00 D1 E1 03 00 AA A9 23 3F A9 28 0F 8E 52 29 BE FF F0 29 1D 0F 91 A8 0C A0 72"
+        "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 3C 54 B9 FF 7B 05 B9 A7 1C 03 94 A8 43 00 D1 A9 23 00 D1 E1 03 00 AA A9 23 3F A9 28 0F 8E 52 29 BE FF F0 29 D9 1C 91 A8 0C A0 72"
     }
   },
   "Routes": {
     "Offsets": {
-      "BootloaderLocalAvatarLocoUpdate": "0x1199EB8",
-      "BootloaderLocalAvatarLocoWorldPathFlag": "0x2FA7D68",
-      "BootloaderRemotePlayerStateApply": "0x1B603D4",
-      "BootloaderAvatarMovementStateUpdate": "0x217A1D8",
-      "BootloaderFlightToggleUpdate": "0x219E928",
-      "BootloaderStepInputBuild": "0x2190D20",
-      "BootloaderStepMechanicsUpdate": "0x21951D0",
-      "BootloaderFlightMechanicsUpdate": "0x21A06A4",
-      "BootloaderBoostLift": "0x219D05C",
-      "BootloaderGameActivityState": "0x2F010B8",
+      "BootloaderLocalAvatarLocoUpdate": "0x119AF40",
+      "BootloaderLocalAvatarLocoWorldPathFlag": "0x2FABE58",
+      "BootloaderRemotePlayerStateApply": "0x1B63F08",
+      "BootloaderAvatarMovementStateUpdate": "0x217EA44",
+      "BootloaderFlightToggleUpdate": "0x21A3194",
+      "BootloaderStepInputBuild": "0x219558C",
+      "BootloaderStepMechanicsUpdate": "0x2199A3C",
+      "BootloaderFlightMechanicsUpdate": "0x21A4F10",
+      "BootloaderBoostLift": "0x21A18C8",
+      "BootloaderGameActivityState": "0x2F051A8",
       "BootloaderGameActivityInputObject": "0x18",
       "BootloaderInputObjectStickSetterVtable": "0x160",
       "BootloaderInputObjectButtonSetterVtable": "0x168",
@@ -55,32 +55,32 @@
       "BootloaderStepInputCameraForwardAxis": "0x110",
       "BootloaderStepInputContextRoot": "0x10",
       "BootloaderStepInputSourceStick": "0x1BEB0",
-      "BootloaderWhiskerCameraUpdate": "0x27AE5C8",
-      "BootloaderGameInit": "0x16E63E0",
+      "BootloaderWhiskerCameraUpdate": "0x27B1668",
+      "BootloaderGameInit": "0x16E985C",
       "BootloaderGameLuaState": "0x20",
       "BootloaderGameCurrentLevelNameInline": "0x16A8",
       "BootloaderGameCurrentLevelNamePointer": "0x940",
-      "BootloaderLuaDoString": "0x283F0E8",
-      "BootloaderCameraTermsUniformSetup": "0x1389F9C",
-      "BootloaderFloatUniformBinder": "0x281B7C0",
-      "BootloaderAvatarSitCycle": "0x1D8925C",
-      "BootloaderLocalAvatarActionResolve": "0x1119110",
-      "BootloaderAvatarEnterSit": "0x11E2BCC",
-      "BootloaderAvatarEnterSquat": "0x11E2D9C",
-      "BootloaderAvatarEnterSleep": "0x11EC838",
-      "BootloaderAvatarLeavePose": "0x11EDE54",
-      "BootloaderAvatarStopAnimation": "0x11ED2A0",
-      "BootloaderAvatarSetState": "0x11E2E68",
-      "BootloaderAvatarEmotePlay": "0x1D8829C",
-      "BootloaderCollectibleLookup": "0x141F370",
-      "BootloaderCollectibleLookupByName": "0x141F700",
-      "BootloaderAvatarTakeCandle": "0x179E488"
+      "BootloaderLuaDoString": "0x2842158",
+      "BootloaderCameraTermsUniformSetup": "0x138B10C",
+      "BootloaderFloatUniformBinder": "0x281E830",
+      "BootloaderAvatarSitCycle": "0x1D8DB60",
+      "BootloaderLocalAvatarActionResolve": "0x111A1D0",
+      "BootloaderAvatarEnterSit": "0x11E3C58",
+      "BootloaderAvatarEnterSquat": "0x11E3E28",
+      "BootloaderAvatarEnterSleep": "0x11ED8C4",
+      "BootloaderAvatarLeavePose": "0x11EEEE0",
+      "BootloaderAvatarStopAnimation": "0x11EE32C",
+      "BootloaderAvatarSetState": "0x11E3EF4",
+      "BootloaderAvatarEmotePlay": "0x1D8CBA0",
+      "BootloaderCollectibleLookup": "0x142265C",
+      "BootloaderCollectibleLookupByName": "0x14229EC",
+      "BootloaderAvatarTakeCandle": "0x17A3904"
     },
     "Signatures": {
         "BootloaderLocalAvatarLocoUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 43 2F D1 F8 03 00 AA A8 03 02 D1 F4 03 07 AA 00 0F C5 3C",
       "BootloaderAvatarMovementStateUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF C3 07 D1 F3 03 00 AA A8 83 01 D1 80 88 41 F9 F9 03 01 AA",
       "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1 08 40 20 1E 00 E4 00 6F F3 03 08 AA A8 E3 00 D1 FC 03 00 AA E0 03 02 AA",
-        "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E 68 8A 00 B0 F5 03 03 AA 08 81 55 39 F3 03 01 AA F4 03 00 AA 28 02 00 34",
+        "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E 68 8A 00 B0 F5 03 03 AA 08 81 5E 39 F3 03 01 AA F4 03 00 AA 28 02 00 34",
       "BootloaderCameraTermsUniformSetup": "FF C3 04 D1 E8 73 00 FD FD 7B 0F A9 FC 5F 10 A9 F6 57 11 A9 F4 4F 12 A9 FD C3 03 91 00 E4 00 6F A8 63 00 D1 F3 03 00 AA A8 83 1F F8 A8 23 00 D1 F4 03 02 AA F5 03 01 AA A8 83 1E F8 00 80 00 AD",
       "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A",
       "BootloaderAvatarSitCycle": "FF 43 02 D1 FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 F3 03 00 AA A8 43 00 D1 20 88 41 F9 F5 03 01 AA A8 83 1F F8",
