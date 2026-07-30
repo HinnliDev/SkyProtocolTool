@@ -1,91 +1,54 @@
 {
   "game_version": "0.34.2",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "contributors": [
     "Hinnli"
   ],
-  "Network": {
+  "RuntimeGlobals": {
     "Offsets": {
-      "BootloaderHttpRequestEnqueue": "0x28289B0",
-      "BootloaderHttpResponseParse": "0x282D754",
-      "BootloaderWebSocketSendFrame": "0x29022A4",
-      "BootloaderWebSocketDispatchData": "0x2901F64"
-    },
-    "Signatures": {
-      "BootloaderHttpRequestEnqueue": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 C3 25 D1 3F E9 7B 92 29 00 40 B9 08 8D 8E 52 2A 10 40 39 88 0E AE 72",
-      "BootloaderHttpResponseParse": "FD 7B BA A9 FC 6F 01 A9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 03 00 91 E9 83 27 D1 3F E9 7B 92 E8 C3 25 91 09 50 48 39 E8 BF 04 F9 E8 E3 25 91 E8 BB 04 F9 29 16 00 34",
-      "BootloaderWebSocketSendFrame": "FF 83 01 D1 FD 7B 01 A9 F9 13 00 F9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 43 00 91 E8 23 00 91 7F 40 40 71 C9 01 80 52 0A 01 80 52 17 20 8A 52 F4 03 00 AA A8 0F 00 F9 A8 63 00 91 49 31 89 1A",
-      "BootloaderWebSocketDispatchData": "FF C3 00 D1 FD 7B 01 A9 F3 13 00 F9 FD 43 00 91 08 A0 4C 39 EA 23 00 91 F3 03 00 AA AA 0F 00 F9",
-      "BootloaderGameNetConnect": "FD 7B BD A9 FC 57 01 A9 F4 4F 02 A9 FD 03 00 91 E9 C3 2E D1 3F E9 7B 92 E8 83 2E 91 09 A0 40 39",
-      "BootloaderGameNetEventPump": "FF C3 05 D1 FD 7B 11 A9 FC 6F 12 A9 FA 67 13 A9 F8 5F 14 A9 F6 57 15 A9 F4 4F 16 A9 FD 43 04 91 F5 03 02 2A F3 03 01 AA F4 03 00 AA E8 83 01 91 E9 A3 01 91 E9 23 06 A9 A1 01 00 B4 E0 03 14 AA",
-      "BootloaderGameNetSendMsg": "FF 83 03 D1 FD 7B 0D A9 FD 43 03 91 00 E4 00 6F A8 43 00 D1 A9 23 00 D1 A9 23 3F A9 BF 03 1E F8"
-    }
-  },
-  "Accounts": {
-    "Offsets": {
-      "BootloaderAccountSelectUpdate": "0xD85F6C",
-      "BootloaderSystemAccountApply": "0xD84BE8"
-    },
-    "Signatures": {
-        "BootloaderAccountSelectUpdate": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 41 27 D1 3F E9 7B 92 E8 0B 40 91 FA 03 06 AA F8 03 05 AA 08 C1 26 91 F4 03 04 AA FB 03 03 AA E8 DF 14 F9 E8 0B 40 91 F5 03 02 AA",
-        "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 3C 54 B9 FF 7B 05 B9 A7 1C 03 94 A8 43 00 D1 A9 23 00 D1 E1 03 00 AA A9 23 3F A9 28 0F 8E 52 29 BE FF F0 29 D9 1C 91 A8 0C A0 72"
-    }
-  },
-  "Routes": {
-    "Offsets": {
-      "BootloaderLocalAvatarLocoUpdate": "0x119AF40",
+      // EN: IDA: open LocalAvatarLocoUpdate, find the ADRP/LDRB draw-path gate near the path-ring update, and resolve its effective global address.
+      // RU: IDA: откройте LocalAvatarLocoUpdate, найдите ADRP/LDRB-проверку отрисовки пути рядом с обновлением кольцевого буфера и вычислите адрес глобала.
       "BootloaderLocalAvatarLocoWorldPathFlag": "0x2FABE58",
-      "BootloaderRemotePlayerStateApply": "0x1B63F08",
-      "BootloaderAvatarMovementStateUpdate": "0x217EA44",
-      "BootloaderFlightToggleUpdate": "0x21A3194",
-      "BootloaderStepInputBuild": "0x219558C",
-      "BootloaderStepMechanicsUpdate": "0x2199A3C",
-      "BootloaderFlightMechanicsUpdate": "0x21A4F10",
-      "BootloaderBoostLift": "0x21A18C8",
-      "BootloaderGameActivityState": "0x2F051A8",
-      "BootloaderGameActivityInputObject": "0x18",
-      "BootloaderInputObjectStickSetterVtable": "0x160",
-      "BootloaderInputObjectButtonSetterVtable": "0x168",
-      "BootloaderInputObjectTouchDownVtable": "0x128",
-      "BootloaderInputObjectTouchMoveVtable": "0x130",
-      "BootloaderInputObjectTouchUpVtable": "0x138",
-      "BootloaderInputObjectTouchCancelVtable": "0x140",
-      "BootloaderStepInputCameraStickXAxis": "0xF0",
-      "BootloaderStepInputCameraUpAxis": "0x100",
-      "BootloaderStepInputCameraForwardAxis": "0x110",
-      "BootloaderStepInputContextRoot": "0x10",
-      "BootloaderStepInputSourceStick": "0x1BEB0",
-      "BootloaderWhiskerCameraUpdate": "0x27B1668",
-      "BootloaderGameInit": "0x16E985C",
-      "BootloaderGameLuaState": "0x20",
-      "BootloaderGameCurrentLevelNameInline": "0x16A8",
-      "BootloaderGameCurrentLevelNamePointer": "0x940",
-      "BootloaderLuaDoString": "0x2842158",
-      "BootloaderCameraTermsUniformSetup": "0x138B10C",
-      "BootloaderFloatUniformBinder": "0x281E830",
-      "BootloaderAvatarSitCycle": "0x1D8DB60",
-      "BootloaderLocalAvatarActionResolve": "0x111A1D0",
-      "BootloaderAvatarEnterSit": "0x11E3C58",
-      "BootloaderAvatarEnterSquat": "0x11E3E28",
-      "BootloaderAvatarEnterSleep": "0x11ED8C4",
-      "BootloaderAvatarLeavePose": "0x11EEEE0",
-      "BootloaderAvatarStopAnimation": "0x11EE32C",
-      "BootloaderAvatarSetState": "0x11E3EF4",
-      "BootloaderAvatarEmotePlay": "0x1D8CBA0",
-      "BootloaderCollectibleLookup": "0x142265C",
-      "BootloaderCollectibleLookupByName": "0x14229EC",
-      "BootloaderAvatarTakeCandle": "0x17A3904"
-    },
+      // EN: IDA: open Java_com_tgc_sky_GameActivity_onStickEventNative; its ADRP/LDR pair loads this global before reading inputObject from state+0x18.
+      // RU: IDA: откройте Java_com_tgc_sky_GameActivity_onStickEventNative; пара ADRP/LDR загружает этот глобал перед чтением inputObject из state+0x18.
+      "BootloaderGameActivityState": "0x2F051A8"
+    }
+  },
+  "DirectCalls": {
     "Signatures": {
-        "BootloaderLocalAvatarLocoUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 43 2F D1 F8 03 00 AA A8 03 02 D1 F4 03 07 AA 00 0F C5 3C",
-      "BootloaderAvatarMovementStateUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF C3 07 D1 F3 03 00 AA A8 83 01 D1 80 88 41 F9 F9 03 01 AA",
-      "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1 08 40 20 1E 00 E4 00 6F F3 03 08 AA A8 E3 00 D1 FC 03 00 AA E0 03 02 AA",
-        "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E 68 8A 00 B0 F5 03 03 AA 08 81 5E 39 F3 03 01 AA F4 03 00 AA 28 02 00 34",
-      "BootloaderCameraTermsUniformSetup": "FF C3 04 D1 E8 73 00 FD FD 7B 0F A9 FC 5F 10 A9 F6 57 11 A9 F4 4F 12 A9 FD C3 03 91 00 E4 00 6F A8 63 00 D1 F3 03 00 AA A8 83 1F F8 A8 23 00 D1 F4 03 02 AA F5 03 01 AA A8 83 1E F8 00 80 00 AD",
-      "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A",
-      "BootloaderAvatarSitCycle": "FF 43 02 D1 FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 F3 03 00 AA A8 43 00 D1 20 88 41 F9 F5 03 01 AA A8 83 1F F8",
-      "BootloaderAvatarEmotePlay": "E8 0F 1A FC FD FB 00 A9 FC 0F 00 F9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 23 00 91 FF C3 26 D1",
-      "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9 5F 00 00 72 48 00 80 52"
+      // EN: IDA: xref "function SetGame( g ) _G.game = g end" or "_G.PLATFORM = \"android\""; use the function start that initializes Lua at game+0x20.
+      // RU: IDA: найдите xref на "function SetGame( g ) _G.game = g end" или "_G.PLATFORM = \"android\""; нужна функция, инициализирующая Lua по game+0x20.
+      "BootloaderGameInit": "FD 7B BA A9 FC 6F 01 A9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 03 00 91 FF 83 2B D1 F3 03 00 AA A8 C3 00 D1 A9 A3 00 D1 ?? ?? ?? ?? ?? ?? ?? ?? A9 23 3D A9 F7 83 25 91 BB 0E 00 94",
+      // EN: IDA: xref "lua_debugdostring"; confirm the wrapper calls the Lua loader and reaches this string on the failure path.
+      // RU: IDA: найдите xref на "lua_debugdostring"; проверьте вызов Lua loader и переход к этой строке в ветке ошибки.
+      "BootloaderLuaDoString": "FD 7B BD A9 FC 0B 00 F9 F4 4F 02 A9 FD 03 00 91 FF 43 24 D1 A8 23 00 D1 A9 63 00 91 F3 03 01 AA F4 03 00 AA A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? C0 00 00 35 E0 03 14 AA E1 03 1F 2A 02 00 80 12",
+      // EN: IDA: open the native SitCycle function and follow its local-avatar action lookup; confirm arg1=1 and a returned action-object pointer.
+      // RU: IDA: откройте нативную SitCycle и проследите поиск actions локального аватара; подтвердите arg1=1 и возврат указателя на action object.
+      "BootloaderLocalAvatarActionResolve": "FD 7B BF A9 FD 03 00 91 88 43 81 52 0B 64 81 52 69 07 80 52 28 00 A0 72 0A 10 97 52 2B 00 A0 72 0C 68 6A 38 EC 00 00 35 29 05 00 F1 00 00 0B 8B 81 FF FF 54 E0 03 1F AA FD 7B C1 A8 C0 03 5F D6",
+      // EN: IDA: in SitCycle follow the Default-to-Sit transition call and verify this unique function prologue.
+      // RU: IDA: в SitCycle проследите вызов перехода Default-to-Sit и проверьте уникальный пролог функции.
+      "BootloaderAvatarEnterSit": "FF 43 01 D1 FD 7B 02 A9 F5 1B 00 F9 F4 4F 04 A9 FD 83 00 91 88 80 89 52 A9 23 00 D1 08 68 68 38 A9 0F 00 F9 A9 63 00 91 A9 83 1F F8 C8 00 00 34 F4 4F 44 A9 F5 1B 40 F9 FD 7B 42 A9 FF 43 01 91",
+      // EN: IDA: in SitCycle follow the Sit-to-Squat transition; distinguish it from EnterSleep by the W8=1 state write after the calls.
+      // RU: IDA: в SitCycle проследите переход Sit-to-Squat; отличайте от EnterSleep по записи состояния W8=1 после вызовов.
+      "BootloaderAvatarEnterSquat": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 41 02 00 36 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? ?? ?? ?? ?? E2 23 00 91 E0 03 13 AA FF 17 00 B9 E8 2B 00 39 E0 C3 00 FC E8 13 00 79 51 30 00 94 28 00 80 52 68 8A 2D B9 FD 7B 42 A9",
+      // EN: IDA: in SitCycle follow the Squat-to-Sleep transition; distinguish it from EnterSquat by the W8=3 state write.
+      // RU: IDA: в SitCycle проследите переход Squat-to-Sleep; отличайте от EnterSquat по записи состояния W8=3.
+      "BootloaderAvatarEnterSleep": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 41 02 00 36 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? ?? ?? ?? ?? E2 23 00 91 E0 03 13 AA FF 17 00 B9 E8 2B 00 39 E0 C3 00 FC E8 13 00 79 AA 09 00 94 68 00 80 52 68 8A 2D B9 FD 7B 42 A9",
+      // EN: IDA: in SitCycle follow the Sleep-to-Default branch and verify the animation-controller argument and unique prologue.
+      // RU: IDA: в SitCycle проследите ветку Sleep-to-Default и проверьте аргумент animation controller и уникальный пролог.
+      "BootloaderAvatarLeavePose": "FF 03 02 D1 E8 1B 00 FD FD 7B 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 03 01 91 A8 63 00 D1 A9 23 00 D1 00 F6 03 0F A8 83 1F F8 08 88 6D B9 F3 03 00 AA A9 83 1E F8 29 00 80 52 E9 6B 00 39",
+      // EN: IDA: xref "StopAnimSeq: fadeOutTime=" and select the function that calls the animation helper and resets controller fields.
+      // RU: IDA: найдите xref на "StopAnimSeq: fadeOutTime=" и выберите функцию, вызывающую animation helper и сбрасывающую поля controller.
+      "BootloaderAvatarStopAnimation": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 83 24 D1 08 40 20 1E 08 EA 82 52 A9 83 00 D1 08 68 68 38 F4 03 03 2A F5 03 02 2A F3 03 00 AA A9 83 1E F8 A9 63 00 D1 A9 03 1E F8",
+      // EN: IDA: follow the state-transition call used by native emote start/stop; verify comparisons of state ids and writes to avatar-state fields.
+      // RU: IDA: проследите вызов смены состояния при старте/остановке нативной эмоции; проверьте сравнения state id и записи полей состояния аватара.
+      "BootloaderAvatarSetState": "FD 7B BF A9 FD 03 00 91 3F 10 00 71 60 00 00 54 3F 08 00 71 C1 00 00 54 88 80 89 52 08 68 68 38 28 01 00 34 FD 7B C1 A8 C0 03 5F D6 3F 1C 00 71 01 88 2D B9 81 FF FF 54 1F 58 17 B9 FD 7B C1 A8",
+      // EN: IDA: follow the collectible-id lookup immediately before full avatar-emote dispatch; X0 is the collectible manager and W1 is the id.
+      // RU: IDA: найдите поиск collectible по id непосредственно перед запуском полной эмоции; X0 — manager, W1 — id.
+      "BootloaderCollectibleLookup": "FF 83 00 D1 FD 7B 01 A9 FD 43 00 91 A1 C3 1F B8 21 01 00 34 00 00 01 91 A1 13 00 D1 0F 1B 00 94 40 00 00 B4 00 0C 40 F9 FD 7B 41 A9 FF 83 00 91 C0 03 5F D6 E0 03 1F AA FD 7B 41 A9 FF 83 00 91",
+      // EN: IDA: in the emote caller find the lookup before AvatarEmotePlay; X0 is game+0x2A8, X1 is a libc++ string, and the function searches manager+0x18.
+      // RU: IDA: в вызывающей эмоцию функции найдите поиск перед AvatarEmotePlay; X0 равен game+0x2A8, X1 — libc++ string, поиск идёт в manager+0x18.
+      "BootloaderCollectibleLookupByName": "28 00 40 39 29 04 40 F9 0A FD 41 D3 1F 01 00 72 48 01 89 9A 28 01 00 B4 FD 7B BF A9 FD 03 00 91 00 60 00 91 FE 1F 00 94 40 00 00 B4 00 14 40 F9 FD 7B C1 A8 C0 03 5F D6 E0 03 1F AA C0 03 5F D6"
     }
   }
 }
