@@ -1,5 +1,5 @@
 {
-  "game_version": "0.34.2",
+  "game_version": "0.34.3",
   "version": "1.5.2",
   "contributors": [
     "Hinnli"
@@ -8,10 +8,10 @@
     "Offsets": {
       // EN: IDA: open LocalAvatarLocoUpdate, find the ADRP/LDRB draw-path gate near the path-ring update, and resolve its effective global address.
       // RU: IDA: откройте LocalAvatarLocoUpdate, найдите ADRP/LDRB-проверку отрисовки пути рядом с обновлением кольцевого буфера и вычислите адрес глобала.
-      "BootloaderLocalAvatarLocoWorldPathFlag": "0x2FABE58",
+      "BootloaderLocalAvatarLocoWorldPathFlag": "0x2FABE78",
       // EN: IDA: open Java_com_tgc_sky_GameActivity_onStickEventNative; its ADRP/LDR pair loads this global before reading inputObject from state+0x18.
       // RU: IDA: откройте Java_com_tgc_sky_GameActivity_onStickEventNative; пара ADRP/LDR загружает этот глобал перед чтением inputObject из state+0x18.
-      "BootloaderGameActivityState": "0x2F051A8"
+      "BootloaderGameActivityState": "0x2F051C8"
     }
   },
   "DirectCalls": {
