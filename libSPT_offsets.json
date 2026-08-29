@@ -14,6 +14,22 @@
       "BootloaderGameActivityState": "0x2F857F8"
     }
   },
+  "AccountState": {
+    "Offsets": {
+      // EN: IDA: xref "system_account_type" and inspect sub_DB3C50/sub_DB9E4C; this DWORD controls the account state machine.
+      // RU: IDA: найдите xref на "system_account_type" и изучите sub_DB3C50/sub_DB9E4C; этот DWORD управляет автоматом состояния аккаунта.
+      "BootloaderAccountStateMachineField": "0x1454",
+      // EN: IDA: sub_DB3E6C reads this DWORD before logging system_account_type; the constructor initializes it to None (12).
+      // RU: IDA: sub_DB3E6C читает этот DWORD перед system_account_type; конструктор задаёт None (12).
+      "BootloaderAccountTypeField": "0x1460",
+      // EN: IDA: sub_DB3C50/sub_DB9E4C set this byte to request applying the selected account type.
+      // RU: IDA: sub_DB3C50/sub_DB9E4C устанавливают этот байт для применения выбранного типа аккаунта.
+      "BootloaderAccountSwitchRequestedField": "0x1464",
+      // EN: IDA: sub_DB3C50/sub_DB9E4C clear this adjacent DWORD during an account transition.
+      // RU: IDA: sub_DB3C50/sub_DB9E4C сбрасывают этот соседний DWORD при переключении аккаунта.
+      "BootloaderAccountAuxStateField": "0x1470"
+    }
+  },
   "DirectCalls": {
     "Signatures": {
       // EN: IDA: xref "function SetGame( g ) _G.game = g end" or "_G.PLATFORM = \"android\""; use the function start that initializes Lua at game+0x20.
@@ -57,7 +73,13 @@
       "BootloaderAvatarEmotePlay": "E8 0F 1A FC FD FB 00 A9 FC 0F 00 F9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 23 00 91 FF C3 26 D1",
       // EN: IDA: xref "AvatarSetCandleState", follow the On branch and verify activation of the held-candle controller and effect state.
       // RU: IDA: найдите xref на "AvatarSetCandleState", проследите ветку On и проверьте активацию контроллера свечи и состояния эффекта.
-      "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9 5F 00 00 72 48 00 80 52"
+      "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9 5F 00 00 72 48 00 80 52",
+      // EN: IDA: xref "account_select_type_local" and use the containing function start; X0 is the current account state object.
+      // RU: IDA: найдите xref на "account_select_type_local" и начало содержащей функции; X0 — текущий объект состояния аккаунта.
+      "BootloaderAccountSelectUpdate": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 41 27 D1 3F E9 7B 92 E8 0B 40 91 FA 03 06 AA F8 03 05 AA 08 C1 26 91 F4 03 04 AA FB 03 03 AA E8 DF 14 F9 E8 0B 40 91 F5 03 02 AA",
+      // EN: IDA: xref "system_account_type"; confirm the function reads account type from state+0x1460.
+      // RU: IDA: найдите xref на "system_account_type"; проверьте чтение типа аккаунта из state+0x1460.
+      "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 60 54 B9 FF 7B 05 B9 FA DC 02 94 A8 43 00 D1 A9 23 00 D1 E1 03 00 AA A9 23 3F A9 28 0F 8E 52 C9 BC FF 90 29 E9 21 91 A8 0C A0 72"
     }
   }
 }
