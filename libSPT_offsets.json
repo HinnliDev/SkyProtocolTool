@@ -1,0 +1,109 @@
+{
+  "game_version": "0.35.0",
+  "version": "1.6.0",
+  "contributors": [
+    "Hinnli"
+  ],
+  "Network": {
+    "Signatures": {
+      "BootloaderGameNetConnect": "FD 7B BD A9 FC 57 01 A9 F4 4F 02 A9 FD 03 00 91 E9 C3 2E D1 3F E9 7B 92 E8 83 2E 91 09 A0 40 39",
+      "BootloaderGameNetEventPump": "FF C3 05 D1 FD 7B 11 A9 FC 6F 12 A9 FA 67 13 A9 F8 5F 14 A9 F6 57 15 A9 F4 4F 16 A9 FD 43 04 91 F5 03 02 2A",
+      "BootloaderGameNetSendMsg": "FF 83 03 D1 FD 7B 0D A9 FD 43 03 91 00 E4 00 6F A8 43 00 D1 A9 23 00 D1 A9 23 3F A9 BF 03 1E F8",
+      "BootloaderHttpRequestEnqueue": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 C3 25 D1",
+      "BootloaderHttpResponseParse": "FD 7B BA A9 FC 6F 01 A9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 03 00 91 E9 83 27 D1 3F E9 7B 92 E8 C3 25 91",
+      "BootloaderWebSocketDispatchData": "FF C3 00 D1 FD 7B 01 A9 F3 13 00 F9 FD 43 00 91 08 A0 4C 39 EA 23 00 91 F3 03 00 AA AA 0F 00 F9",
+      "BootloaderWebSocketSendFrame": "FF 83 01 D1 FD 7B 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 83 00 91 17 80 81 52 E8 43 00 91"
+    }
+  },
+  "Movement": {
+    "Signatures": {
+      "BootloaderAvatarMovementStateUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF C3 07 D1 F3 03 00 AA",
+      "BootloaderBoostLift": "E9 23 B9 6D FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 FF 43 07 D1 A8 83 00 D1",
+      "BootloaderFlightMechanicsUpdate": "FF C3 01 D1 E8 13 00 FD FD FB 02 A9 F9 1F 00 F9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD A3 00 91 ?? ?? ?? ?? E9 03 00 91 08 41 52 39",
+      "BootloaderFlightToggleUpdate": "EA 0F 18 FC E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF C3 07 D1 A8 03 01 D1",
+      "BootloaderLocalAvatarLocoUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 83 2F D1",
+      "BootloaderRemotePlayerStateApply": "?? ?? ?? ?? FD 7B BC A9 F8 5F 01 A9 F6 57 02 A9 F4 4F 03 A9 FD 03 00 91 08 92 8B 52 F6 03 02 2A",
+      "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1",
+      "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E ?? ?? ?? ?? F5 03 03 AA"
+    },
+    "Offsets": {
+      "BootloaderLocalAvatarLocoWorldPathFlag": "0x3135774"
+    }
+  },
+  "Input": {
+    "Offsets": {
+      "BootloaderGameActivityState": "0x308A618",
+      "BootloaderGameActivityInputObject": "0x18",
+      "BootloaderInputObjectStickSetterVtable": "0x160",
+      "BootloaderInputObjectButtonSetterVtable": "0x168",
+      "BootloaderInputObjectTouchDownVtable": "0x128",
+      "BootloaderInputObjectTouchMoveVtable": "0x130",
+      "BootloaderInputObjectTouchUpVtable": "0x138",
+      "BootloaderInputObjectTouchCancelVtable": "0x140",
+      "BootloaderStepInputContextRoot": "0x10",
+      "BootloaderStepInputSourceStick": "0x1BEB0",
+      "BootloaderStepInputCameraStickXAxis": "0xF0",
+      "BootloaderStepInputCameraUpAxis": "0x100",
+      "BootloaderStepInputCameraForwardAxis": "0x110"
+    }
+  },
+  "Camera": {
+    "Signatures": {
+      "BootloaderCameraTermsUniformSetup": "FF C3 04 D1 E8 73 00 FD FD 7B 0F A9 FC 5F 10 A9 F6 57 11 A9 F4 4F 12 A9 FD C3 03 91 00 E4 00 6F",
+      "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A FD 7B C1 A8 ?? ?? ?? ?? FD 7B BF A9 FD 03 00 91",
+      "BootloaderWhiskerCameraUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 03 2F D1"
+    }
+  },
+  "GameAndLua": {
+    "Signatures": {
+      "BootloaderGameInit": "FD 7B BA A9 FC 6F 01 A9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 03 00 91 FF 83 2B D1",
+      "BootloaderLuaDoString": "FD 7B BD A9 FC 0B 00 F9 F4 4F 02 A9 FD 03 00 91 FF 43 24 D1 A8 23 00 D1 A9 63 00 91 F3 03 01 AA F4 03 00 AA A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? ?? ?? ?? ?? E0 03 14 AA"
+    },
+    "Offsets": {
+      "BootloaderGameLuaState": "0x20",
+      "BootloaderGameCurrentLevelNameInline": "0x16C8",
+      "BootloaderGameCurrentLevelNamePointer": "0x960"
+    }
+  },
+  "Animations": {
+    "Signatures": {
+      "BootloaderAnimationFloatParameterSet": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 43 24 D1 08 40 20 1E F4 03 01 2A",
+      "BootloaderAvatarAnimationFinalize": "FF 43 01 D1 FD 7B 01 A9 F7 13 00 F9 F6 57 03 A9 F4 4F 04 A9 FD 43 00 91 E8 23 00 91 A9 63 00 91 A8 0F 00 F9 E9 07 00 F9 ?? ?? ?? ?? F3 03 00 AA",
+      "BootloaderAvatarBodyOverrideCopy": "FD 7B BE A9 F4 4F 01 A9 FD 03 00 91 14 1A 89 52 08 68 74 B8 1F 09 00 71 ?? ?? ?? ?? F3 03 1F 2A",
+      "BootloaderAvatarEmotePlay": "E8 0F 1A FC FD FB 00 A9 FC 0F 00 F9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 23 00 91 FF C3 26 D1",
+      "BootloaderAvatarEnterSit": "FF 43 01 D1 FD 7B 02 A9 F5 1B 00 F9 F4 4F 04 A9 FD 83 00 91 88 42 8A 52 A9 23 00 D1 08 68 68 38",
+      "BootloaderAvatarEnterSleep": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? 21 88 17 91",
+      "BootloaderAvatarEnterSquat": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? 21 84 16 91",
+      "BootloaderAvatarLeavePose": "FF 03 02 D1 E8 1B 00 FD FD 7B 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 03 01 91 A8 63 00 D1",
+      "BootloaderAvatarSetState": "FD 7B BF A9 FD 03 00 91 3F 10 00 71 ?? ?? ?? ?? 3F 08 00 71 ?? ?? ?? ?? 88 42 8A 52 08 68 68 38",
+      "BootloaderAvatarSitCycle": "FF 43 02 D1 FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 F3 03 00 AA A8 43 00 D1 20 8C 41 F9",
+      "BootloaderAvatarStopAnimation": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 83 24 D1 08 40 20 1E 08 EC 82 52",
+      "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9",
+      "BootloaderBodyOverrideHistoryAppend": "FF 03 02 D1 FD 7B 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 03 01 91 E8 83 00 91 F6 03 03 2A",
+      "BootloaderBodyOverrideProduce": "EC 0F 17 FC EB 2B 01 6D E9 23 02 6D FD 7B 03 A9 FC 6F 04 A9 FA 67 05 A9 F8 5F 06 A9 F6 57 07 A9 F4 4F 08 A9 FD C3 00 91 FF 03 1D D1",
+      "BootloaderBodyOverrideTransform": "FF 83 01 D1 FD 7B 04 A9 F4 4F 05 A9 FD 03 01 91 01 00 40 AD F4 03 01 AA 03 08 41 AD F3 03 08 AA",
+      "BootloaderCapeArmAvailability": "FF 43 01 D1 FD 7B 03 A9 F4 4F 04 A9 FD C3 00 91 08 2C 43 F9 13 34 43 F9 F4 03 01 2A E0 03 00 91",
+      "BootloaderCollectibleLookup": "FF 83 00 D1 FD 7B 01 A9 FD 43 00 91 A1 C3 1F B8 ?? ?? ?? ?? 00 00 01 91 A1 13 00 D1 ?? ?? ?? ??",
+      "BootloaderCollectibleLookupByName": "28 00 40 39 29 04 40 F9 0A FD 41 D3 1F 01 00 72 48 01 89 9A ?? ?? ?? ?? FD 7B BF A9 FD 03 00 91 00 60 00 91",
+      "BootloaderPlayerStateBuild": "E9 23 B9 6D FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 FF 17 40 D1",
+      "BootloaderTransformMatrixRefresh": "FF 83 01 D1 FD 7B 04 A9 F3 2B 00 F9 FD 03 01 91 A8 23 00 D1 09 80 43 39 A8 0F 00 F9 A8 63 00 91"
+    },
+    "Offsets": {
+      "BootloaderCapeArmAvailabilityLocalReturn": "0x12873D8",
+      "BootloaderBodyOverrideHistoryAppendLocalReturn": "0x128A984",
+      "BootloaderLocalAvatarActionResolve": "0x11B2BC8"
+    }
+  },
+  "Accounts": {
+    "Signatures": {
+      "BootloaderAccountSelectUpdate": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 C1 27 D1",
+      "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 C0 54 B9 FF 7B 05 B9 ?? ?? ?? ??"
+    },
+    "Offsets": {
+      "BootloaderAccountStateMachineField": "0x14B4",
+      "BootloaderAccountTypeField": "0x14C0",
+      "BootloaderAccountSwitchRequestedField": "0x14C4",
+      "BootloaderAccountAuxStateField": "0x14D0"
+    }
+  }
+}
