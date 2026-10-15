@@ -2,7 +2,7 @@
 
 # Руководство Flows
 
-[![English](https://img.shields.io/badge/lang-Русский-blue)](./flows.md)
+[![English](https://img.shields.io/badge/lang-English-blue)](./flows.md)
 
 Flows — сценарии из связанных нод. Сохранённый JSON может содержать URL,
 тело и пользовательские заголовки. Не включайте в сценарий секретные значения,
