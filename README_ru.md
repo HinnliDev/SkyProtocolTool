@@ -1,8 +1,8 @@
 <div align="center">
   
 # Sky Protocol Tool (SPT)
-[![English](https://img.shields.io/badge/lang-English-red)](./README.md)
-[![License MIT](https://badgen.net/github/license/HinnliDev/SkyProtocolTool)](https://github.com/HinnliDev/SkyProtocolTool/blob/main/LICENSE)
+[![English](https://img.shields.io/badge/lang-English-red)](README.md)
+[![License](https://badgen.net/github/license/HinnliDev/SkyProtocolTool)](LICENSE)
 
 Sky Protocol Tool (SPT) — это плагин для Android-версии Sky: Children of the Light, загружаемый через Canvas. Он предоставляет удобный интерфейс для анализа сетевого HTTP-трафика игры и ручной работы с запросами.
 </div>
@@ -72,4 +72,4 @@ SPT подключается к внутренним HTTP-функциям иг�
 ## Важно
 
 Проект предназначен для технического анализа и не является универсальной библиотекой.
-Данный проект распространяется под лицензией MIT. Подробности см. в файле [LICENSE](https://github.com/HinnliDev/SkyProtocolTool/blob/main/LICENSE)
+Данный проект распространяется под лицензией MIT. Подробности см. в файле [LICENSE](LICENSE)
