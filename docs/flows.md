@@ -2,7 +2,7 @@
 
 # Flows guide
 
-[![Русский](https://img.shields.io/badge/lang-Русский-blue)](./flows_ru.md)
+[![Русский](https://img.shields.io/badge/lang-Русский-blue)](flows_ru.md)
 
 Flows are scenarios built from connected nodes. Saved JSON may contain URLs,
 request bodies and custom headers. Do not include secret values in flows you
