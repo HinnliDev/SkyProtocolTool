@@ -1,5 +1,5 @@
 {
-  "game_version": "0.35.1",
+  "game_version": "0.35.2",
   "version": "1.6.1",
   "Network": {
     "Signatures": {
@@ -25,12 +25,12 @@
       "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E ?? ?? ?? ?? F5 03 03 AA"
     },
     "Offsets": {
-      "BootloaderLocalAvatarLocoWorldPathFlag": "0x3135784"
+      "BootloaderLocalAvatarLocoWorldPathFlag": "0x3135794"
     }
   },
   "Input": {
     "Offsets": {
-      "BootloaderGameActivityState": "0x308A628",
+      "BootloaderGameActivityState": "0x308A638",
       "BootloaderGameActivityInputObject": "0x18",
       "BootloaderInputObjectStickSetterVtable": "0x160",
       "BootloaderInputObjectButtonSetterVtable": "0x168",
@@ -89,7 +89,7 @@
     "Offsets": {
       "BootloaderCapeArmAvailabilityLocalReturn": "0x12873D8",
       "BootloaderBodyOverrideHistoryAppendLocalReturn": "0x128A984",
-      "BootloaderLocalAvatarActionResolve": "0x11B2BC8"
+      "BootloaderLocalAvatarActionResolve": "0x11B2BC4"
     }
   },
   "Accounts": {
