@@ -6,7 +6,7 @@
       "BootloaderGameNetConnect": "FD 7B BD A9 FC 57 01 A9 F4 4F 02 A9 FD 03 00 91 E9 C3 2E D1 3F E9 7B 92 E8 83 2E 91 09 A0 40 39",
       "BootloaderGameNetEventPump": "FF C3 05 D1 FD 7B 11 A9 FC 6F 12 A9 FA 67 13 A9 F8 5F 14 A9 F6 57 15 A9 F4 4F 16 A9 FD 43 04 91 F5 03 02 2A",
       "BootloaderGameNetSendMsg": "FF 83 03 D1 FD 7B 0D A9 FD 43 03 91 00 E4 00 6F A8 43 00 D1 A9 23 00 D1 A9 23 3F A9 BF 03 1E F8",
-      "BootloaderHttpRequestEnqueue": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 C3 25 D1",
+      "BootloaderHttpRequestEnqueue": "?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 C3 25 D1",
       "BootloaderHttpResponseParse": "FD 7B BA A9 FC 6F 01 A9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 03 00 91 E9 83 27 D1 3F E9 7B 92 E8 C3 25 91",
       "BootloaderWebSocketDispatchData": "FF C3 00 D1 FD 7B 01 A9 F3 13 00 F9 FD 43 00 91 08 A0 4C 39 EA 23 00 91 F3 03 00 AA AA 0F 00 F9",
       "BootloaderWebSocketSendFrame": "FF 83 01 D1 FD 7B 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 83 00 91 17 80 81 52 E8 43 00 91",
