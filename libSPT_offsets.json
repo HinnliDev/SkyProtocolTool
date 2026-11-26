@@ -1,5 +1,5 @@
 {
-  "game_version": "0.35.2",
+  "game_version": "0.35.5",
   "version": "1.6.1",
   "Network": {
     "Signatures": {
@@ -20,17 +20,22 @@
       "BootloaderFlightMechanicsUpdate": "FF C3 01 D1 E8 13 00 FD FD FB 02 A9 F9 1F 00 F9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD A3 00 91 ?? ?? ?? ?? E9 03 00 91 ?? ?? ?? ?? E9 07 00 F9",
       "BootloaderFlightToggleUpdate": "EA 0F 18 FC E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF C3 07 D1 A8 03 01 D1",
       "BootloaderLocalAvatarLocoUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 83 2F D1",
-      "BootloaderRemotePlayerStateApply": "?? ?? ?? ?? FD 7B BC A9 F8 5F 01 A9 F6 57 02 A9 F4 4F 03 A9 FD 03 00 91 08 92 8B 52 F6 03 02 2A",
-      "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1",
+      "BootloaderRemotePlayerStateApply": "?? ?? ?? ?? FD 7B BC A9 F8 5F 01 A9 F6 57 02 A9 F4 4F 03 A9 FD 03 00 91 08 96 8B 52 F6 03 02 2A F7 03 00 AA",
+      "BootloaderStepInputBuild": "EB 2B B8 6D E9 23 01 6D FD 7B 02 A9 FC 6F 03 A9 FA 67 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 83 00 91 FF 43 0A D1 08 40 20 1E",
       "BootloaderStepMechanicsUpdate": "FF 43 02 D1 EE 13 00 FD ED 33 03 6D EB 2B 04 6D E9 23 05 6D FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 28 40 20 1E ?? ?? ?? ?? F5 03 03 AA"
     },
     "Offsets": {
-      "BootloaderLocalAvatarLocoWorldPathFlag": "0x3135794"
+      "BootloaderLocalAvatarLocoWorldPathFlag": "0x31B16B4",
+      "BootloaderLocalAvatarPathIndex": "0xE74",
+      "BootloaderLocalAvatarPathRing": "0xE78",
+      "BootloaderLocalAvatarSurf": "0xD30",
+      "BootloaderRemotePlayerLook": "0x5A40",
+      "BootloaderRemotePlayerPosition": "0x59B0"
     }
   },
   "Input": {
     "Offsets": {
-      "BootloaderGameActivityState": "0x308A638",
+      "BootloaderGameActivityState": "0x30F96B8",
       "BootloaderGameActivityInputObject": "0x18",
       "BootloaderInputObjectStickSetterVtable": "0x160",
       "BootloaderInputObjectButtonSetterVtable": "0x168",
@@ -49,7 +54,7 @@
     "Signatures": {
       "BootloaderCameraTermsUniformSetup": "FF C3 04 D1 E8 73 00 FD FD 7B 0F A9 FC 5F 10 A9 F6 57 11 A9 F4 4F 12 A9 FD C3 03 91 00 E4 00 6F",
       "BootloaderFloatUniformBinder": "FD 7B BF A9 FD 03 00 91 E4 03 1F 2A E5 03 03 2A FD 7B C1 A8 ?? ?? ?? ?? FD 7B BF A9 FD 03 00 91",
-      "BootloaderWhiskerCameraUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF 03 2F D1"
+      "BootloaderWhiskerCameraUpdate": "EF 3B B6 6D ED 33 01 6D EB 2B 02 6D E9 23 03 6D FD 7B 04 A9 FC 6F 05 A9 FA 67 06 A9 F8 5F 07 A9 F6 57 08 A9 F4 4F 09 A9 FD 03 01 91 FF C3 2E D1"
     }
   },
   "GameAndLua": {
@@ -59,23 +64,23 @@
     },
     "Offsets": {
       "BootloaderGameLuaState": "0x20",
-      "BootloaderGameCurrentLevelNameInline": "0x16C8",
-      "BootloaderGameCurrentLevelNamePointer": "0x960"
+      "BootloaderGameCurrentLevelNameInline": "0x16B8",
+      "BootloaderGameCurrentLevelNamePointer": "0x958"
     }
   },
   "Animations": {
     "Signatures": {
       "BootloaderAnimationFloatParameterSet": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 43 24 D1 08 40 20 1E F4 03 01 2A",
-      "BootloaderAvatarAnimationFinalize": "FF 43 01 D1 FD 7B 01 A9 F7 13 00 F9 F6 57 03 A9 F4 4F 04 A9 FD 43 00 91 E8 23 00 91 A9 63 00 91 A8 0F 00 F9 E9 07 00 F9 ?? ?? ?? ?? F3 03 00 AA",
-      "BootloaderAvatarBodyOverrideCopy": "FD 7B BE A9 F4 4F 01 A9 FD 03 00 91 14 1A 89 52 08 68 74 B8 1F 09 00 71 ?? ?? ?? ?? F3 03 1F 2A",
+      "BootloaderAvatarAnimationFinalize": "FF 03 03 D1 E8 33 00 FD FD 7B 07 A9 FA 67 08 A9 F8 5F 09 A9 F6 57 0A A9 F4 4F 0B A9 FD C3 01 91 A8 A3 00 D1",
+      "BootloaderAvatarBodyOverrideCopy": "FD 7B BE A9 F4 4F 01 A9 FD 03 00 91 14 32 89 52 08 68 74 B8 1F 09 00 71 ?? ?? ?? ?? F3 03 1F 2A E0 03 13 2A",
       "BootloaderAvatarEmotePlay": "E8 0F 1A FC FD FB 00 A9 FC 0F 00 F9 FA 67 02 A9 F8 5F 03 A9 F6 57 04 A9 F4 4F 05 A9 FD 23 00 91 FF C3 26 D1",
-      "BootloaderAvatarEnterSit": "FF 43 01 D1 FD 7B 02 A9 F5 1B 00 F9 F4 4F 04 A9 FD 83 00 91 88 42 8A 52 A9 23 00 D1 08 68 68 38",
-      "BootloaderAvatarEnterSleep": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? ?? ?? ?? ?? E2 23 00 91 E0 03 13 AA FF 17 00 B9 E8 2B 00 39 E0 C3 00 FC E8 13 00 79 ?? ?? ?? ?? 68 00 80 52 68 9A 33 B9",
-      "BootloaderAvatarEnterSquat": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? 21 84 16 91",
+      "BootloaderAvatarEnterSit": "FF 43 01 D1 FD 7B 02 A9 F5 1B 00 F9 F4 4F 04 A9 FD 83 00 91 88 5A 8A 52 A9 23 00 D1 08 68 68 38 A9 0F 00 F9",
+      "BootloaderAvatarEnterSleep": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? 21 6C 10 91",
+      "BootloaderAvatarEnterSquat": "FF 03 01 D1 FD 7B 02 A9 F3 1B 00 F9 FD 83 00 91 F3 03 00 AA A8 23 00 D1 A9 63 00 91 A8 0F 00 F9 A9 83 1F F8 ?? ?? ?? ?? 00 F6 03 0F 28 00 80 52 ?? ?? ?? ?? 21 C4 2D 91",
       "BootloaderAvatarLeavePose": "FF 03 02 D1 E8 1B 00 FD FD 7B 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 03 01 91 A8 63 00 D1",
-      "BootloaderAvatarSetState": "FD 7B BF A9 FD 03 00 91 3F 10 00 71 ?? ?? ?? ?? 3F 08 00 71 ?? ?? ?? ?? 88 42 8A 52 08 68 68 38",
+      "BootloaderAvatarSetState": "FD 7B BF A9 FD 03 00 91 3F 10 00 71 ?? ?? ?? ?? 3F 08 00 71 ?? ?? ?? ?? 88 5A 8A 52 08 68 68 38 ?? ?? ?? ??",
       "BootloaderAvatarSitCycle": "FF 43 02 D1 FD 7B 06 A9 F6 57 07 A9 F4 4F 08 A9 FD 83 01 91 F3 03 00 AA A8 43 00 D1 20 8C 41 F9",
-      "BootloaderAvatarStopAnimation": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 83 24 D1 08 40 20 1E 08 EC 82 52",
+      "BootloaderAvatarStopAnimation": "E9 23 BC 6D FD 7B 01 A9 FC 57 02 A9 F4 4F 03 A9 FD 43 00 91 FF 83 24 D1 08 40 20 1E 08 F0 82 52 A9 83 00 D1",
       "BootloaderAvatarTakeCandle": "FF 83 07 D1 FD 7B 1A A9 FC DB 00 F9 F6 57 1C A9 F4 4F 1D A9 FD 83 06 91 F3 03 00 AA 00 A0 40 F9",
       "BootloaderBodyOverrideHistoryAppend": "FF 03 02 D1 FD 7B 04 A9 F8 5F 05 A9 F6 57 06 A9 F4 4F 07 A9 FD 03 01 91 E8 83 00 91 F6 03 03 2A",
       "BootloaderBodyOverrideProduce": "EC 0F 17 FC EB 2B 01 6D E9 23 02 6D FD 7B 03 A9 FC 6F 04 A9 FA 67 05 A9 F8 5F 06 A9 F6 57 07 A9 F4 4F 08 A9 FD C3 00 91 FF 03 1D D1",
@@ -87,14 +92,45 @@
       "BootloaderTransformMatrixRefresh": "FF 83 01 D1 FD 7B 04 A9 F3 2B 00 F9 FD 03 01 91 A8 23 00 D1 09 80 43 39 A8 0F 00 F9 A8 63 00 91"
     },
     "Offsets": {
-      "BootloaderCapeArmAvailabilityLocalReturn": "0x12873D8",
-      "BootloaderBodyOverrideHistoryAppendLocalReturn": "0x128A984",
-      "BootloaderLocalAvatarActionResolve": "0x11B2BC4"
+      "BootloaderCapeArmAvailabilityLocalReturn": "0x12BC168",
+      "BootloaderBodyOverrideHistoryAppendLocalReturn": "0x12B43D8",
+      "BootloaderLocalAvatarActionResolve": "0x11EEB98",
+      "BootloaderAnimationAttachmentM_hairCenter": "0x400",
+      "BootloaderAnimationAttachmentM_headAUX": "0x408",
+      "BootloaderAnimationBoneL_armRoot": "0x430",
+      "BootloaderAnimationBoneL_elbow": "0x440",
+      "BootloaderAnimationBoneL_foot": "0x370",
+      "BootloaderAnimationBoneL_hand": "0x450",
+      "BootloaderAnimationBoneL_knee": "0x380",
+      "BootloaderAnimationBoneL_legRoot": "0x460",
+      "BootloaderAnimationBoneL_shoulder": "0x420",
+      "BootloaderAnimationBoneM_chest": "0x478",
+      "BootloaderAnimationBoneM_head": "0x3B0",
+      "BootloaderAnimationBoneM_neckRoot": "0x3B8",
+      "BootloaderAnimationBoneM_neckTop": "0x480",
+      "BootloaderAnimationBoneM_spine": "0x3A0",
+      "BootloaderAnimationBoneR_armRoot": "0x438",
+      "BootloaderAnimationBoneR_elbow": "0x448",
+      "BootloaderAnimationBoneR_foot": "0x378",
+      "BootloaderAnimationBoneR_hand": "0x458",
+      "BootloaderAnimationBoneR_knee": "0x388",
+      "BootloaderAnimationBoneR_legRoot": "0x468",
+      "BootloaderAnimationBoneR_shoulder": "0x428",
+      "BootloaderAnimationCapeHandles": "0x1670",
+      "BootloaderAnimationControllerGraph": "0x17C0",
+      "BootloaderAnimationControllerState": "0x3458",
+      "BootloaderAnimationGraphSkeletonFallback": "0xD88",
+      "BootloaderAnimationGraphSkeletonPrimary": "0xD90",
+      "BootloaderAnimationHipPose": "0x470",
+      "BootloaderBodyOverrideHistoryBase": "0x34F0",
+      "BootloaderBodyOverrideHistoryCount": "0x4990",
+      "BootloaderPlayerStateBodyOverrideCount": "0x5B92",
+      "BootloaderSkeletonInverseBind": "0x90"
     }
   },
   "Accounts": {
     "Signatures": {
-      "BootloaderAccountSelectUpdate": "E8 0F 19 FC FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 C1 27 D1",
+      "BootloaderAccountSelectUpdate": "E9 23 B9 6D FD 7B 01 A9 FC 6F 02 A9 FA 67 03 A9 F8 5F 04 A9 F6 57 05 A9 F4 4F 06 A9 FD 43 00 91 E9 0B 40 D1 29 41 2D D1",
       "BootloaderSystemAccountApply": "FD 7B BE A9 FC 4F 01 A9 FD 03 00 91 FF 43 16 D1 F3 03 00 AA 00 C0 54 B9 FF 7B 05 B9 ?? ?? ?? ??",
       "BootloaderAccountTransition": "FD 7B BC A9 FC 5F 01 A9 F6 57 02 A9 F4 4F 03 A9 FD 03 00 91 FF 07 40 D1 FF 83 00 D1 F5 03 02 2A"
     },
